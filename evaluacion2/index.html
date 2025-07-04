@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Astro v5.7.10" />
+    <title>Carousel Template · Bootstrap v5.3</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/" />
+    <script src="js/color-modes.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="carousel.rtl.css">
+    
+    
+    
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: #0000001a;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em #0000001a, inset 0 0.125em 0.5em #00000026;
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <!-- symbols omitted for brevity, puedes pegar aquí los que necesites -->
+    </svg>
+
+
+
+    <!-- Header/Navbar -->
+    <header data-bs-theme="dark">
+      <section class="posicion">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <img src="resources/logo.png" alt="logo" width="300px" class="navbar-brand" >
+          
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+          
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="btn btn-primary" href="#inicio">INICIO</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">CONTACTO</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      </section>
+    </header>
+
+    <!-- Main Content -->
+    <section id="inicio">
+    <main>
+    
+      <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-hidden="true">
+    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+    <image href="resources/banner.png" alt="nosotros">dcd</image>
+  </svg>
+
+  <div class="container">
+    <div class="carousel-caption text-center">
+      <h1>INNOVACIÓN AL SIGUIENTE NIVEL</h1>
+      <p><a class="btn btn-lg btn-outline-light" href="#">NOSOTROS</a></p>
+    </div>
+  </div>
+</div>
+
+          
+          <!--
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        -->
+      </div>
+</section>
+      <!-- Marketing Section -->
+       <section id="nosotros">
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2 class="fw-normal">Quiénes somos</h2>
+            <p>Somos una empresa de tecnología con experiencia en fábrica de software, outsourcing y proyectos llave en manos de gran envergadura. Contamos con más de 20 años de experiencia local e internacional brinando soluciones y creando vinculos estrategicos con nuestros clientes brindando valor al CORE de su negocio.
+
+Con nuestra experiencia comprobada en el sector financiero, ganadero, multinacionales, publico entre otros, Ofrecemos a nuestros clientes servicios de de alta especialización con procesos y metodologias integradas aplicadas a la vanguardia y estructura de nuestros clientes..
+
+En la actualidad contamos con un plantel compuesto por mas de 50 profesionales altamente calificados combinando conocimiento, estrategia, tecnología y diseño de negocio.
+
+Sugerimos propuestas de valor para aumentar los márgenes de utilidad de nuestros clientes.</p>
+          </div>
+          <div  class="col-sm-4">
+            <svg class="bd-placeholder-img" width="450" height="240" xmlns="http://www.w3.org/2000/svg"
+            role="img" preserveAspectRatio="xMidYMid slice" focusable="false"> 
+            <image href="resources/nosotros1.jpg" width="500px" ></image>
+          </svg> 
+          </div>
+          <!-- Repetir para las otras dos columnas... -->
+      </section>
+    </main>
+
+<br><br><br>
+
+
+       <section id="proyectos-realizados" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 flex-wrap">ADAPTÁNDONOS A CADA NECESIDAD</h2>
+
+    <div class="row justify-content-center gx-4">
+      <div class="col-md-4 mb-4">
+        <div class="cuadro-blanco p-4 text-center">
+          <h2>+150</h2>
+          <p>Proyectos realizados.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="cuadro-blanco p-4 text-center">
+          <h2>+15</h2>
+          <p>Proyectos en curso.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="cuadro-blanco p-4 text-center">
+          <h2>+2000 horas</h2>
+          <p>Experiencias en Desarrollo y Análisis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<br><br><br>
+
+<section id="servicios" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">SERVICIOS</h2>
+
+    <div class="row justify-content-center gx-4">
+      <div class="col-md-4 mb-4">
+        <div class="cuadro-blanco p-4 text-center">
+          <h3>FABRICA DE SOFTWARE</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus recusandae nihil necessitatibus ipsam odio dolorum esse non explicabo aperiam iste ea quia illo suscipit, eius mollitia, pariatur beatae deserunt sapiente?</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="cuadro-blanco p-4 text-center">
+          <h3>PROYECTOS A MEDIDA (Llaves en mano)</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam, alias neque facere dolorum nesciunt rerum similique nobis minus ipsa, ipsam provident quia deleniti porro repellat! Aut molestias autem natus!</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="cuadro-blanco p-4 text-center">
+          <h3>IT OUTSOURCING</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus similique rerum quia neque suscipit dolorum magni labore! Quo eveniet at, tempora animi quos hic provident! Incidunt obcaecati dicta iusto debitis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br><br>
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">CONTACTO</h2>
+
+    <div class="row text-center justify-content-center gx-4 mb-5">
+      <div class="col-md-4 mb-3">
+        <div class="cuadro-blanco p-4">
+          <h3>Dirección</h3>
+          <p>Paralelepípedo, Caraguata'y, Paraguay.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="cuadro-blanco p-4">
+          <h3>Email</h3>
+          <p>elpepeEtesechNdea@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="cuadro-blanco p-4">
+          <h3>Teléfonos</h3>
+          <p>(654984651478498)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mapa y Formulario -->
+    <div class="row gx-4 gy-4">
+      <div class="col-md-6">
+        <!-- Mapa real de Google -->
+        <div class="cuadro-blanco p-3 h-100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.803637875258!2d-57.635905685494304!3d-25.26373902682221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da9482d73c3d9%3A0x7b1b50c1caa3f231!2sParaguay!5e0!3m2!1ses!2spy!4v1682900053476!5m2!1ses!2spy"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="cuadro-blanco p-4 h-100">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="name" placeholder="Tu nombre completo">
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" class="form-control" id="asunto" placeholder="Motivo del mensaje">
+            </div>
+
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-outline-primary w-100">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
